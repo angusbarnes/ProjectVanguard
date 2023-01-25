@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "bcdf1a3d9d43919b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JavaScript Standards.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "aa5bf0b90b90f905",
             "type": "leaf",
             "state": {
@@ -35,12 +47,8 @@
             "id": "30ac30437c0b9dd2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Art Assets.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           },
           {
@@ -56,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +93,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#feature",
+                "query": "tag:#Dogwater",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -122,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Art Assets.md",
+                "file": "JavaScript Standards.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Art Assets.md",
+                "file": "JavaScript Standards.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Art Assets.md"
+                "file": "JavaScript Standards.md"
               }
             }
           },
@@ -193,17 +201,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "30ac30437c0b9dd2",
+  "active": "bcdf1a3d9d43919b",
   "lastOpenFiles": [
-    "Project Management.md",
     "Cow Genetics.md",
-    "Idea Spew.md",
-    "Kanban Pages/Trading Between Players.md",
-    "Kanban Pages/Inbuilt Scripting Engine.md",
-    "Kanban Pages/MongoDB Database Integration.md",
-    "Kanban View.md",
+    "JavaScript Standards.md",
     "Project Vanguard.md",
+    "Kanban View.md",
     "Vision Board.canvas",
-    "Kanban Pages/Dynamic Collectibles System.md"
+    "Idea Spew.md",
+    "Art Assets.md",
+    "Project Management.md",
+    "Kanban Pages/Trading Between Players.md",
+    "Kanban Pages/Inbuilt Scripting Engine.md"
   ]
 }
