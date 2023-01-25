@@ -1,0 +1,12 @@
+{
+  "aliases": {
+    "1674602124536": {
+      "name": "todo",
+      "commandId": "obsidian-tasks-plugin:edit-task"
+    }
+  },
+  "commandDetection": {
+    "maxTry": 5,
+    "msecOfInterval": 200
+  }
+}
