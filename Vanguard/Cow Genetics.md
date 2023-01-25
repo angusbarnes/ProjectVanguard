@@ -6,4 +6,4 @@ Make a robot dude instead cause cows are random
 
 #### Todos
 To implement a todo use the `/todo` command on a new line
-- [ ] Take out the trash
+- [x] Take out the trash ✅ 2023-01-25
