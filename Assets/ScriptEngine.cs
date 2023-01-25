@@ -23,7 +23,7 @@ public class ScriptEngine : MonoBehaviour
         string path = Application.streamingAssetsPath + "/Scripts/lib/EventSystem.js";
         string scriptText = File.ReadAllText(path);
         engine.Execute(scriptText);
-        engine.Invoke("event.RaiseEvent", "init");
+        engine.Invoke("Events.RaiseEvent", "init");
     }
 
     // Update is called once per frame
