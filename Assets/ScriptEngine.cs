@@ -1,35 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Jint;
 using System;
+using Jint;
+using Jint.Runtime.Interop;
+using System.IO;
 
 public class ScriptEngine : MonoBehaviour
 {
+    public class JintLoggerInterop
+    {
+        public static void log(string logMessage) {
+            Debug.Log(logMessage);
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
-        var engine = new Engine();
+        var engine = new Engine(cfg => cfg.AllowClr());
         engine.SetValue("print", new Action<object>(Debug.Log));
-        engine.SetValue("printError", new Action<object>(Debug.LogError));
-        engine.SetValue("printWarning", new Action<object>(Debug.LogWarning));
-
-        engine.Execute(@"
-                        class EventSystem { 
-                            static events = [];
-                            static OnInit(func) { 
-                                this.events.push(func)
-                            }
-                            static _init() {
-                                for (var event of this.events) {
-                                    event.Invoke()
-                                }
-                            }
-                        }
-                      ");
-
-        engine.Invoke("EventSystem.Init()");
-        Debug.Log(engine.Execute("print('test')"));
+        engine.SetValue("DebugLogger", TypeReference.CreateTypeReference(engine, typeof(JintLoggerInterop)));
+        string path = Application.streamingAssetsPath + "/Scripts/lib/EventSystem.js";
+        string scriptText = File.ReadAllText(path);
+        engine.Execute(scriptText);
+        engine.Invoke("event.RaiseEvent", "init");
     }
 
     // Update is called once per frame
