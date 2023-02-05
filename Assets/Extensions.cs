@@ -18,4 +18,9 @@ public static class Extensions
 
         return stringBuilder.ToString();
     }
+
+    public static bool Exists(this object obj)
+    {
+        return !(obj == null);
+    }
 }
